@@ -1,4 +1,4 @@
-import { dogs } from "./data/dogs";
+import { dogs } from "./data/dogs.js";
 
 export const resolvers = {
   Query: {
