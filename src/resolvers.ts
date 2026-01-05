@@ -1,9 +1,10 @@
-import { dogs } from "./data/dogs.js";
+import { getDogs } from "./modules/dogs/getDogs/getDogs.js";
+import { GetDogsArgs } from "./modules/dogs/getDogs/types.js";
 
 export const resolvers = {
   Query: {
-    dogs: () => {
-      return dogs;
+    dogs: (_parent: any, args: GetDogsArgs) => {
+      return getDogs(args);
     },
   },
 };

@@ -8,6 +8,6 @@ export const typeDefs = `#graphql
   }
 
   type Query {
-    dogs: [Dog]
+    dogs(name: String, breed: String): [Dog!]!
   }
 `;
