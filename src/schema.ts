@@ -10,4 +10,8 @@ export const typeDefs = `#graphql
   type Query {
     dogs(name: String, breed: String): [Dog!]!
   }
+
+  type Mutation {
+    updateDogName(id: ID!, name: String!): Dog!
+  }
 `;
