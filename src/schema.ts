@@ -12,6 +12,6 @@ export const typeDefs = `#graphql
   }
 
   type Mutation {
-    updateDogName(id: ID!, name: String!): Dog!
+    updateDogName(id: ID!, name: String!): Dog
   }
 `;
